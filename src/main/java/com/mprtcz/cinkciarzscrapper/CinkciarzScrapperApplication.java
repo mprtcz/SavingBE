@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package com.mprtcz.cinkciarzscrapper;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class HelloworldApplication {
+public class CinkciarzScrapperApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloworldApplication.class, args);
+		SpringApplication.run(CinkciarzScrapperApplication.class, args);
 	}
 
 	@Value("${TARGET:World}")
