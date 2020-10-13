@@ -20,6 +20,6 @@ FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
 COPY --from=builder /app/target/cinkciarz-scrapper-*.jar /cinkciarzscrapper.jar
 
 # Run the web service on container startup.
-CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/cinkciarz-scrapper.jar"]
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/cinkciarzscrapper.jar"]
 
 # done with https://medium.com/google-cloud/how-to-deploy-your-cloud-run-service-using-github-actions-e5b6a6f597a3
