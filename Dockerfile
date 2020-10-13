@@ -17,7 +17,7 @@ RUN mvn package -DskipTests
 FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine-slim
 
 # Copy the jar to the production image from the builder stage.
-COPY --from=builder /app/target/cinkciarzscrapper-*.jar /cinkciarzscrapper.jar
+COPY --from=builder /app/target/cinkciarz-scrapper-*.jar /cinkciarzscrapper.jar
 
 # Run the web service on container startup.
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/cinkciarz-scrapper.jar"]
